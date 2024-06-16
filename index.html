@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Akshata Salunkhe</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Akshata Salunkhe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Akshata_Circular.png" alt="Akshata Salunkhe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Akshata Salunkhe</h1>
+        <p class="section__text__p2">
+
+          	<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data scientist  ',
+						'Data engineer  ',
+						'Software developer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            target="_blank"
+            onclick="location.href='https://www.linkedin.com/in/akshata-salunkhe/'" 
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            target="_blank"
+            onclick="location.href='https://github.com/AkshataSalunkhe'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Akshata_Square.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2.5+ years <br />Software Development and Automated testing</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BTech in Electronics and Telecommunication<br />MS in Artificial Intelligence and Business Analytics</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A pioneer turned into a coding enthusiast.
+              My projects and research focus on how Machine Learning systems interact with our societies and the downstream effects of introducing AI to our society. I work on creating data pipelines to extract, load and transform to Datawarehouse and handled data security, and privacy. 
+              And yes, in these thrilling days of the LLM boom, I've found a new playground where words and algorithms dance together, unveiling insights and challenges alike.
+              I have worked under multiple organizations from Tech port solutions to Eaton in diverse roles and tech stacks comprising of Coding languages, automation or AI / ML projects. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Science</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+
+   
+    <section id="resume">
+      <div class="container">
+        <h1 class="title">My Resume</h1>
+        <div class="resume-tabs">
+          <button class="tab-button active" onclick="openTab('education')">Education</button>
+          <button class="tab-button" onclick="openTab('skills')">Experience</button>
+        </div>
+    
+        <div id="education" class="tab-content active">
+          <div class="timeline-container">
+            <div class="timeline-column">
+              <h2>Education</h2>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Master of Science in Business Analytics and Information Systems</h3>
+                  <p>University of South Florida, Tampa (2023 - 2024)</p>
+                  <p>Data Mining, Advanced Database Management System, Advanced System Analysis and Design, Seminar on Software Testing, Project Management, Big Data</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Bachelor of Engineering (BEng) in Computer Science</h3>
+                  <p>Savitribai Phule Pune University, India</p>
+                  <p>Web Development, Object Oriented Programming Language, Database Management System, Data Structures and Algorithms, Machine Learning</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="timeline-column">
+              <h2>Experience</h2>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Frontend Developer</h3>
+                  <p>Centiro Solutions (2022 - 2023)</p>
+                  <p>Javascript | Angular (TypeScript) | ASP.Net Framework | CSS | Figma | Azure DevOps</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Python Developer</h3>
+                  <p>Cognizant (2020 - 2022)</p>
+                  <p>Python | LINUX | UNIX | Moogsoft | Web API | Continues Improvement | Maintenance</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Android Developer Intern</h3>
+                  <p>WERP (2019)</p>
+                  <p>Android Development | API Integration | Adobe XD | Prototype Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div id="skills" class="tab-content">
+          <div class="skills-container">
+            <h2>Experience</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <section id="projects">
+      <p class="section__text__p1">Visit My Portfolio and Keep Your Feedback</p>
+      <h1 class="title">My Projects</h1>
+      <p class="repositories-count"><a href="https://github.com/AkshataSalunkhe/">62 Total repositories</a></p>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="assets/QVGh.gif" alt="HeartWellness" class="project-img" />
+          </div>
+          <div class="project-title-container">
+            <h2 class="project-title">HeartWellness</h2>
+            <div class="project-logos">
+              <a href="https://github.com/AkshataSalunkhe/HeartWellness" target="_blank">
+                <img src="assets/github.png" alt="GitHub Icon" class="icon" />
+              </a>
+              <a href="https://your-website-link" target="_blank">
+                <img src="assets/website.png" alt="Website Icon" class="icon" />
+              </a>
+            </div>
+          </div>
+          <p class="project-description">The homepage features the iconic green and white color scheme of Starbucks using HTML, CSS and Javascript.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="assets/demo_PII.gif" alt="PII Redaction" class="project-img" />
+          </div>
+          <div class="project-title-container">
+            <h2 class="project-title">PII Redaction</h2>
+            <div class="project-logos">
+              <a href="https://github.com/AkshataSalunkhe/Bulls-TadHacks24" target="_blank">
+                <img src="assets/github.png" alt="GitHub Icon" class="icon" />
+              </a>
+              <a href="https://youtu.be/Iy4ySVKF4BE" target="_blank">
+                <img src="assets/website.png" alt="Website Icon" class="icon" />
+              </a>
+            </div>
+          </div>
+          <p class="project-description">The homepage features the iconic green and white color scheme of Starbucks using HTML, CSS and Javascript.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="assets/SOTR.gif" alt="State of Tampa" class="project-img" />
+          </div>
+          <div class="project-title-container">
+            <h2 class="project-title">State of Tampa</h2>
+            <div class="project-logos">
+              <a href="https://github.com/AkshataSalunkhe/Bulls-TadHacks24" target="_blank">
+                <img src="assets/github.png" alt="GitHub Icon" class="icon" />
+              </a>
+              <a href="https://www.usf.edu/business/state-of-the-region/e-insights-2024/index.aspx" target="_blank">
+                <img src="assets/website.png" alt="Website Icon" class="icon" />
+              </a>
+            </div>
+          </div>
+          <p class="project-description">The homepage features the iconic green and white color scheme of Starbucks using HTML, CSS and Javascript.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="assets/Blog.gif" alt="Insightscribe-Blog-Generation" class="project-img" />
+          </div>
+          <div class="project-title-container">
+            <h2 class="project-title">Insightscribe-Blog-Generation</h2>
+            <div class="project-logos">
+              <a href="https://github.com/AkshataSalunkhe/Insightscribe-Blog-Generation-App" target="_blank">
+                <img src="assets/github.png" alt="GitHub Icon" class="icon" />
+              </a>
+              <a href="https://www.usf.edu/business/state-of-the-region/e-insights-2024/index.aspx" target="_blank">
+                <img src="assets/website.png" alt="Website Icon" class="icon" />
+              </a>
+            </div>
+          </div>
+          <p class="project-description">The homepage features the iconic green and white color scheme of Starbucks using HTML, CSS and Javascript.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="assets/stock.gif" alt="Stock Marketing Prediction" class="project-img" />
+          </div>
+          <div class="project-title-container">
+            <h2 class="project-title">Stock Marketing Prediction</h2>
+            <div class="project-logos">
+              <a href="https://github.com/AkshataSalunkhe/Stock-Marketing-Prediction" target="_blank">
+                <img src="assets/github.png" alt="GitHub Icon" class="icon" />
+              </a>
+              <a href="https://www.usf.edu/business/state-of-the-region/e-insights-2024/index.aspx" target="_blank">
+                <img src="assets/website.png" alt="Website Icon" class="icon" />
+              </a>
+            </div>
+          </div>
+          <p class="project-description">The homepage features the iconic green and white color scheme of Starbucks using HTML, CSS and Javascript.</p>
+        </div>
+      
+      </div>
+    </section>
+
+    <section>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+
+    <section id="contact">
+      <div class="container">
+        <h1 class="title">Contact With Me</h1>
+        <div class="contact-container">
+          <div class="contact-info">
+            <img src="assets/your-profile-image.jpg" alt="Profile Picture" class="contact-img" />
+            <h2>Tejas Sathe</h2>
+            <p>Full Stack Developer</p>
+            <p>Graduate student at the University of South Florida, Tampa.</p>
+            <p>Phone: +1 (786) 561-4652</p>
+            <p>Email: tejasathe117@gmail.com</p>
+            <h3>FIND ME IN</h3>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/your-profile/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" /></a>
+              <a href="https://github.com/your-profile" target="_blank"><img src="assets/github.png" alt="GitHub" /></a>
+              <a href="https://twitter.com/your-profile" target="_blank"><img src="assets/twitter.png" alt="Twitter" /></a>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Akshata Salunkhe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
