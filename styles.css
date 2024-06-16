@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.spaced {
+    margin-top: 40px; /* Adjust the value as needed */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.project-title {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.date {
+    font-size: 1.2em;
+    color: gray;
+}
+
+.hero {
+    background-color: #e9ecef;
+    padding: 2em;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 1em;
+    color: gray;
+}
+
+.details {
+    text-align: center;
+    padding: 4em 0;
+}
+
+.details h3, .details h4 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.details p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.links-skills {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.links-skills .category, .links-skills .skills-technology, .links-skills .find-more {
+    flex: 1;
+}
+
+.links-skills h3 {
+    margin-bottom: 1em;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-list {
+    margin-top: 1em;
+}
+
+.highlight {
+    font-size: 1.2em;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.highlight:hover {
+    color: #00b1fd; /* Pink color on hover */
+}
+
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: 3em auto;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slide-image {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

@@ -2,6 +2,179 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.project-title {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.date {
+    font-size: 1.2em;
+    color: gray;
+}
+
+.hero {
+    background-color: #e9ecef;
+    padding: 2em;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 1em;
+    color: gray;
+}
+
+.details {
+    text-align: center;
+    padding: 4em 0;
+}
+
+.details h3, .details h4 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.details p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.links-skills {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.links-skills .category, .links-skills .skills-technology, .links-skills .find-more {
+    flex: 1;
+}
+
+.links-skills h3 {
+    margin-bottom: 1em;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-list {
+    margin-top: 1em;
+}
+
+.highlight {
+    font-size: 1.2em;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.highlight:hover {
+    color: #ff69b4; /* Pink color on hover */
+}
+
+.blog {
+    text-align: center;
+    padding: 4em 0;
+}
+
+.blog-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.blog-link:hover {
+    color: #ff69b4;
+    text-decoration: underline;
+}
+
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: 3em auto;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slide-image {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+.highlight.link {
+  color: blue;
+  text-decoration: none;
+}
+
+.highlight.link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -150,15 +323,11 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 90vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-  padding: 4rem 0
-}
-
-.section-container {
-  display: flex;
+  padding: 4rem 0;
+  margin-bottom: 5rem; /* Added margin-bottom */
 }
 
 /* PROFILE SECTION */
@@ -167,13 +336,13 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  min-height: 70vh; /* Changed from height: 80vh to min-height: 70vh */
 }
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300%;
   margin: auto 0;
 }
 
@@ -489,6 +658,7 @@ article .icon {
   text-align: center;
   width: 300px;
   transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 2rem; /* Added margin-bottom to create spacing between cards */
 }
 
 .project-card:hover {
@@ -570,7 +740,7 @@ article .icon {
 }
 
 .contact-info h2 {
-  color: #e91e63;
+  color: #04e995;
   margin-bottom: 1rem;
 }
 
@@ -831,8 +1001,6 @@ footer p {
   width: 100%;
 }
 
-
-
 .timeline-content ul {
   list-style-type: disc;
   padding-left: 1.5rem;
@@ -867,5 +1035,14 @@ footer p {
 
   .project-card {
     width: 80%;
+  }
+}
+
+/* Additional responsiveness */
+@media screen and (max-width: 768px) {
+  section {
+    margin: 0 2rem;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
   }
 }
