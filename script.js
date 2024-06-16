@@ -21,6 +21,16 @@ function openTab(tabName) {
 }
 
 // Initialize by displaying the first tab
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.tab-button').click();
-});
+function openTab(tabName) {
+  var i;
+  var x = document.getElementsByClassName("tab-content");
+  var buttons = document.getElementsByClassName("tab-button");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    buttons[i].classList.remove("active");
+  }
+  document.getElementById(tabName).style.display = "block";
+  event.currentTarget.classList.add("active");
+}
+
+

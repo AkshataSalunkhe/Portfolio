@@ -14,7 +14,8 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -55,9 +56,9 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Data scientist  ',
-						'Data engineer  ',
-						'Software developer   ',
+						'Data Scientist  ',
+						'Data Engineer  ',
+						'Data Analyst   ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -85,11 +86,11 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/AkshataSalunkhe_Resume.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-2" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
@@ -157,9 +158,10 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='#experience'"
       />
     </section>
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
@@ -291,154 +293,115 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='#resume'"
       />
     </section>
 
 
    
-    <section id="resume">
-      <div class="container">
-        <h1 class="title">My Resume</h1>
-        <div class="resume-tabs">
-          <button class="tab-button active" onclick="openTab('education')">Education</button>
-          <button class="tab-button" onclick="openTab('skills')">Experience</button>
-        </div>
-    
-        <div id="education" class="tab-content active">
-          <div class="timeline-container">
-            <div class="timeline-column">
-              <h2>Education</h2>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h3>Master of Science in Business Analytics and Information Systems</h3>
-                  <p>University of South Florida, Tampa (2023 - 2024)</p>
-                  <p>Data Mining, Advanced Database Management System, Advanced System Analysis and Design, Seminar on Software Testing, Project Management, Big Data</p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h3>Bachelor of Engineering (BEng) in Computer Science</h3>
-                  <p>Savitribai Phule Pune University, India</p>
-                  <p>Web Development, Object Oriented Programming Language, Database Management System, Data Structures and Algorithms, Machine Learning</p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="timeline-column">
-              <h2>Experience</h2>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h3>Frontend Developer</h3>
-                  <p>Centiro Solutions (2022 - 2023)</p>
-                  <p>Javascript | Angular (TypeScript) | ASP.Net Framework | CSS | Figma | Azure DevOps</p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h3>Python Developer</h3>
-                  <p>Cognizant (2020 - 2022)</p>
-                  <p>Python | LINUX | UNIX | Moogsoft | Web API | Continues Improvement | Maintenance</p>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h3>Android Developer Intern</h3>
-                  <p>WERP (2019)</p>
-                  <p>Android Development | API Integration | Adobe XD | Prototype Design</p>
-                </div>
-              </div>
+ <!-- Resume Section -->
+ <section id="resume">
+  <div class="container">
+    <p class="section__text__p1">2.5+ YEARS OF EXPERIENCE</p>
+    <h1 class="title">My Resume</h1>
+    <div class="resume-tabs">
+      <button class="tab-button active" onclick="openTab('education')">Education</button>
+      <button class="tab-button" onclick="openTab('skills')">Experience</button>
+    </div>
+
+    <div id="education" class="tab-content active">
+      <div class="timeline-container">
+        <div class="timeline-column">
+          <h2>Education</h2>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Master of Science in Business Analytics and Information Systems</h3>
+              <p>University of South Florida, Tampa (2023 - 2024)</p>
+              <p>Data Mining, Advanced Database Management System, Advanced System Analysis and Design, Seminar on Software Testing, Project Management, Big Data</p>
             </div>
           </div>
-        </div>
-    
-        <div id="skills" class="tab-content">
-          <div class="skills-container">
-            <h2>Experience</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>C++</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>Tableau</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>Machine Learning</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>AWS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Bachelor of Engineering (BEng) in Computer Science</h3>
+              <p>Savitribai Phule Pune University, India</p>
+              <p>Web Development, Object Oriented Programming Language, Database Management System, Data Structures and Algorithms, Machine Learning</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    
-    
-    
+    </div>
+
+    <div id="skills" class="tab-content">
+      <div class="timeline-container">
+        <div class="timeline-column">
+          <h2>Job Experience</h2>
+          <div class="timeline-item full-width">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content full-width">
+              <h3>Graduate Assistant</h3>
+              <p>University of South Florida, Tampa (2023 - 2024)</p>
+              <p class="skills">Python |  Data Visualization | Tableau | Excel </p>
+              <ul>
+                <li>Elevated role to lead the Tampa Bay e-insights report, focusing on themes of affordability and talent pipeline comparing with other 19 metropolitan statistical areas in the United States.</li>
+                <li>Extracted data from public sources (Google Trends, Census, FRED), expertly cleaning and transforming raw datasets using Python, Excel, and R.</li>
+                <li>Created Business Intelligence (BI) solutions using Tableau, improving data interpretability for stakeholders, revealing deeper insights into underlying dynamics and trends.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item full-width">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Proctor</h3>
+              <p>SAS, University of South Florida, Tampa (Dec 2023 - May 2024)</p>
+              <p>Web Development, Object Oriented Programming Language, Database Management System, Data Structures and Algorithms, Machine Learning</p>
+            </div>
+          </div>
+          <div class="timeline-item full-width">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Associate Data Engineer</h3>
+              <p>Eaton India Innovation Center, India (2021 - 2023)</p>
+              <p class="skills">Python |  Statistical Analysis | Six Sigma  | Spark | SQL | Agile | C# | ETL</p>
+              <ul>
+                <li>Directed a dedicated team of data engineers to implement data acquisition strategies, establishing robust ETL data pipelines to extract valuable insights from historical datasets. Utilized statistical analysis techniques for predictive modeling and data forecasting to empower data-driven decision-making.</li>
+                <li>We leveraged Spark, Python, SQL playing a pivotal role in applying analytics for takeouts insights for guidance to maintain a healthy workflow and simplify the management of everyday testing.</li>
+                <li>Played a key role in driving process improvement initiatives encompassing key elements for scalability, security, and high availability featuring by applying Six Sigma methodologies, achieving a 60% reduction in manual testing efforts.</li>
+                <li>Achieved Six Sigma Green Belt certification post DMAIC training; successfully deployed data-driven approaches leading to a 60% decrease in testing time and a 70% decline in defects.</li>
+                <li>Championed the adoption of Agile Development Methodology, enabling a consistent flow of new product releases annually and reducing time-to-market by 25%.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item full-width">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Data Engineering Intern</h3>
+              <p>IOTIOT, India (Apr 2020 - Aug 2020)</p>
+              <p class="skills"> ApacheSpark | AWS | SQL | Agile | ETL</p>
+              <ul>
+                <li>Collaborated with data scientists and fellow data engineers to develop data-driven solutions in the geospatial domain, utilizing AWS infrastructure and Big Data technologies such as Apache Spark.</li>
+                <li>Managed & orchestrated CI/CD processes for real time data ingestion, while leveraging Bitbucket data pipelines, and SQL procedures and helped streamlining development workflows.</li>
+                <li>Identified ETL workflow bottlenecks, executing optimized algorithms to streamline processes, resulting in a 40% reduction in data processing time, significantly improving accuracy and timeliness.</li>
+               </div>
+          </div>
+                 </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+</section>
+
+
     <section id="projects">
       <p class="section__text__p1">Visit My Portfolio and Keep Your Feedback</p>
       <h1 class="title">My Projects</h1>
@@ -552,18 +515,17 @@
         <h1 class="title">Contact With Me</h1>
         <div class="contact-container">
           <div class="contact-info">
-            <img src="assets/your-profile-image.jpg" alt="Profile Picture" class="contact-img" />
-            <h2>Tejas Sathe</h2>
-            <p>Full Stack Developer</p>
+            <img src="assets/Akshata_Circular.png" alt="Profile Picture" class="contact-img" />
+            <h2>Akshata Salunkhe</h2>
+            <p>Data Scientist</p>
             <p>Graduate student at the University of South Florida, Tampa.</p>
-            <p>Phone: +1 (786) 561-4652</p>
-            <p>Email: tejasathe117@gmail.com</p>
+            <p>Phone: +1 (305) 502-4285</p>
+            <p>Email: salunkhe10@usf.edu</p>
             <h3>FIND ME IN</h3>
             <div class="social-icons">
               <a href="https://www.linkedin.com/in/your-profile/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" /></a>
               <a href="https://github.com/your-profile" target="_blank"><img src="assets/github.png" alt="GitHub" /></a>
-              <a href="https://twitter.com/your-profile" target="_blank"><img src="assets/twitter.png" alt="Twitter" /></a>
-            </div>
+                         </div>
           </div>
           <form class="contact-form">
             <div class="form-group">
@@ -598,7 +560,8 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>

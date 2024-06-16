@@ -178,3 +178,33 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  #projects, #resume {
+    height: fit-content;
+  }
+
+  .education-container, .job-container {
+    margin: 1rem 0;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .education-container h3, .job-container h3 {
+    font-size: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
